@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhabani Sankar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css?v=2.2">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR73RQYZ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XR73RQYZ5C');
+  </script>
+  <script src="https://kit.fontawesome.com/c02153cb7b.js" crossorigin="anonymous"></script>
+  <!-- MathJax Configuration -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bhabani_logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div id="research">
+      <div class="container">
+        <div class="row"></div>
+        <h1 class="sub-title">My Research</h1>
+        <p>Welcome to the Research section of my website. Here you will find information about my research in
+          Lattice QCD, publications, talks, and earlier projects.</p>
+        <p class="research-jump">Looking for Master's &amp; earlier reading projects? <a
+            href="#earlier-projects">Earlier Projects ↓</a></p>
+        <div class="research-work">
+          <h2>Lattice QCD and Hadron Spectroscopy</h2>
+          <p>I am currently engaged in research in the field of Lattice Quantum Chromodynamics (Lattice QCD),
+            a powerful approach to studying the strong interaction, which is a fundamental force in the Standard Model
+            of particle physics.</p>
+
+          <h3>Exotic Hadrons</h3>
+          <p>Within the realm of Lattice QCD, my specific focus is on Hadron Spectroscopy. In simple terms,
+            hadrons are composite particles made up of quarks and gluons. I am particularly intrigued by exotic
+            hadrons,
+            which are unique particles that do not fit into the traditional quark model. These particles provide
+            valuable
+            insights into the behavior of the strong force under extreme conditions.</p>
+
+          <h3>Investigating Tetraquarks</h3>
+          <p>One of the primary goals of my current research is to explore the properties of tetraquarks.
+            Tetraquarks are exotic hadrons composed of four quarks, including two quarks and two antiquarks.
+            By conducting numerical simulations using Lattice QCD techniques, I aim to determine the masses
+            of tetraquark states and gain a deeper understanding of their nature and behavior. I am working as a
+            doctoal student at the hadron spectroscopy
+            group of The Institute of Mathematical Science under <a
+              href="https://www.imsc.res.in/~padmanath/index.html#/M. Padmanath" target="_blank">Dr. M. Padmanath.</a>
+          </p>
+          <p>
+            A brief summary of our work was also featured in the
+            <a href="https://www.imsc.res.in/sites/default/files/newsletters/IMSc_Newsletter_Vol_13_Issue_1.pdf#page=9"
+              target="_blank">
+              IMSc Newsletter
+            </a>.
+          </p>
+
+
+          <h3>Lattice QCD Simulation</h3>
+          <p>
+            To perform large-scale numerical studies of hadronic systems, I make extensive use of public Lattice QCD
+            software frameworks including
+            <a href="https://luscher.web.cern.ch/luscher/openQCD/" target="_blank"><strong>openQCD</strong></a>,
+            <a href="https://github.com/milc-qcd/milc_qcd" target="_blank"><strong>MILC</strong></a>,
+            <a href="https://jeffersonlab.github.io/chroma/" target="_blank"><strong>Chroma</strong></a>, and
+            <a href="https://github.com/lehner/gpt" target="_blank"><strong>GPT</strong></a>.
+            These tools are used for generating gauge configurations, constructing correlation functions, and
+            performing spectroscopy analyses.
+            My work leverages these packages to probe the structure and dynamics of exotic hadrons, with a focus on
+            high-precision simulations
+            using efficient algorithms on HPC clusters.
+          </p>
+
+
+          <div class="sub-tab-titles">
+            <p role="button" tabindex="0" class="sub-tab-links active-links" data-subtab="seminar"
+              onclick="openSubTab(event,'seminar')">Seminar Talks</p>
+            <p role="button" tabindex="0" class="sub-tab-links" data-subtab="poster"
+              onclick="openSubTab(event,'poster')">Poster Talks</p>
+            <p role="button" tabindex="0" class="sub-tab-links" data-subtab="paper" onclick="openSubTab(event,'paper')">
+              Research Papers</p>
+            <p role="button" tabindex="0" class="sub-tab-links" data-subtab="Proceedings"
+              onclick="openSubTab(event,'Proceedings')">Proceedings</p>
+          </div>
+
+          <div class="sub-tab-contents active-tab" id="seminar">
+            <div class="talk-grid">
+              <div class="talk-item">
+                <a href="pdfs/bhabani_ccapp.pdf" target="_blank">
+                  <img src="images/ccapp.png" alt="CAPPS Talk">
+                </a>
+                <p>
+                  “Study of doubly heavy tetraquarks” – CAPPS, 2025
+                </p>
+              </div>
+
+              <div class="talk-item">
+                <a href="pdfs/bhabani_phanc.pdf" target="_blank">
+                  <img src="images/phanc.png" alt="PHANC Talk">
+                </a>
+                <p>
+                  “Heavy tetraquark structures in Lattice QCD” – PHANC, 2025
+                </p>
+              </div>
+
+              <div class="talk-item">
+                <a href="pdfs/bhabani_tifr_jctalk.pdf" target="_blank">
+                  <img src="images/tifr.png" alt="TIFR Talk">
+                </a>
+                <p>
+                  “Lattice QCD study of exotic hadrons” – TIFR Talk, 2025
+                </p>
+              </div>
+
+              <div class="talk-item">
+                <a href="pdfs/bhabani_03172025.pdf" target="_blank">
+                  <img src="images/imsc_seminar.png" alt="IMSc Talk">
+                </a>
+                <p>
+                  “Tetraquarks with bottom quarks in lattice QCD” – IMSc Physics Seminar, 2025
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="pdfs/bhabani_tuda_talk.pdf" target="_blank">
+                  <img src="images/TUD_talk.png" alt="IMSc Talk">
+                </a>
+                <p>
+                  “Study of Doubly bottom and bottom-strange tetraquarks from lattice QCD” – TU Darmstadt, Germany,
+                  2025
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="https://indico.ph.tum.de/event/7886/contributions/10753/attachments/7006/9732/benasque_bhabani.pdf"
+                  target="_blank">
+                  <img src="images/benasque.png" alt="IMSc Talk">
+                </a>
+                <p>
+                  “Heavy Tetraquark Hadron Spectroscopy using Lattice QCD” – Centro de Ciencias de Benasque, Spain,
+                  2025
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="pdfs/bhabani_unireg_talk.pdf" target="_blank">
+                  <img src="images/regens_talk.png" alt="IMSc Talk">
+                </a>
+                <p>
+                  “Doubly bottom and bottom-strange tetraquarks from lattice QCD” – University of Regensburg, Germany,
+                  2025
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="pdfs/bhabani_JSI_talk.pdf" target="_blank">
+                  <img src="images/JSI_talk.png" alt="IMSc Talk">
+                </a>
+                <p>
+                  “Lattice QCD investigation of Heavy Tetraquark Spectroscopy” – Jozef Stefan Institute, Ljubljana,
+                  2025
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="sub-tab-contents" id="poster">
+            <div class="talk-grid">
+              <div class="talk-item">
+                <a href="https://indico.imsc.res.in/event/1/contributions/65/attachments/12/18/Bhabani_tapp2024.pdf"
+                  target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: inherit; display: block;">
+                  <img src="images/tapp2024_poster.png" alt="Poster Presentation">
+                  <p>“Lattice QCD study of Doubly Heavy Tetraquarks” – Trends in Astroparticle and Particle Physics
+                    (TAPP), 2024</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-tab-contents" id="paper">
+            <div class="talk-grid">
+              <div class="talk-item">
+                <a href="https://arxiv.org/pdf/2609.28646" target="_blank">
+                  <img src="images/detsign_C102r005n73_ritz.png" alt="Sign of Wilson-Fermion Determinant">
+                </a>
+                <p>
+                  <a href="https://arxiv.org/pdf/2609.28646" target="_blank">
+                    “Sign of Wilson-Fermion Determinant using Contour-Integral Spectral Projection”
+                  </a><br>
+                  arXiv:2609.28646 [hep-lat], 2026
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="https://arxiv.org/pdf/2503.09760" target="_blank">
+                  <img src="images/bbud_chiral.png" alt="Research Paper">
+                </a>
+                <p>
+                  <a href="https://arxiv.org/pdf/2503.09760" target="_blank">
+                    “$bb\bar u\bar d$ and $bs\bar u\bar d$ tetraquarks from lattice QCD<br>
+                    using two-meson and diquark-antidiquark variational basis"
+                  </a><br>
+                  Physical Review D, 2025
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sub-tab-contents" id="Proceedings">
+            <div class="talk-grid">
+              <div class="talk-item">
+                <a href="https://pos.sissa.it/518/063" target="_blank">
+                  <img src="images/pos_bb.png" alt="LATTICE 2025 Proceedings">
+                </a>
+                <p>
+                  <a href="https://pos.sissa.it/518/063" target="_blank">
+                    “Doubly Bottom and Bottom-Strange Tetraquarks in the Isoscalar Channel”
+                  </a> – PoS(LATTICE2025) 063
+                </p>
+              </div>
+              <div class="talk-item">
+                <a href="https://arxiv.org/pdf/2505.00078" target="_blank">
+                  <img src="images/bbud_spec_f.png" alt="Conference Presentation">
+                </a>
+                <p>
+                  <a href="https://arxiv.org/pdf/2505.00078" target="_blank">
+                    “Doubly Bottom Tetraquarks from a Lattice QCD Perspective”
+                  </a> – XXVI DAE-BRNS HEP Symposium, 2024
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div><!-- .research-work -->
+
+        <!-- Earlier Projects Section -->
+        <div class="earlier-projects-section" id="earlier-projects">
+          <h2 class="sub-title" style="font-size: 32px; margin-bottom: 8px;">Earlier Projects</h2>
+          <p style="margin-bottom: 25px; color: #ababab;">Selected reading and research projects from my Master's
+            studies.</p>
+          <div class="research-grid">
+            <div class="research-item">
+              <h2>Study of Strongly Interacting System</h2>
+              <a href="https://drive.google.com/file/d/1jt-ZSvli4fNsBEpD11FLVDgrAyvsdUky/view?usp=drive_link"
+                target="_blank">
+                <img src="images/dis.png" alt="Deep-Inelastic Scattering Project">
+              </a>
+              <p>This was a reading project which I did under <a
+                  href="http://www.jcbose.ac.in/faculty-details/sanjay-kumar-ghosh" target="_blank">Prof. Sanjay Kumar
+                  Ghosh</a>.
+                Here I investigated the structure of the proton with the help of Deep-Inelastic Scattering.</p>
+            </div>
+            <div class="research-item">
+              <h2>Comparison between Monte Carlo and Mean-fields Results in Ising Model for Finite External Field</h2>
+              <a href="https://drive-link-for-projectB" target="_blank">
+                <img src="images/ising.gif" alt="Ising Model Project"></a>
+              <p>This was a very interesting project about the phase transition which I did under <a
+                  href="https://www.imsc.res.in/sanatan_digal" target="_blank">Prof. Sanatan Digal</a>. Here I compared
+                thermodynamic observables like magnetization and the corresponding
+                fluctuation between Monte Carlo results and mean field theory (Bragg-Williams and Bethe
+                approximations) with a uniform external magnetic field.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- .container -->
+    </div><!-- #research -->
+  </main>
+  <div class="copyright">
+    <p> Copyright 2023 @ bhabanist. made with <i class="fa-solid fa-heart"></i> by Bhabani Sankar</p>
+  </div>
+
+  <script src="tabs.js?v=2.2"></script>
+  <script src="subtabs.js?v=2.2"></script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-180px";
+    }
+
+    function openSubTab(evt, subTabName) {
+      if (typeof evt === 'string' && !subTabName) {
+        subTabName = evt;
+        evt = window.event;
+      }
+      var i;
+      var subtabcontent = document.getElementsByClassName("sub-tab-contents");
+      for (i = 0; i < subtabcontent.length; i++) {
+        subtabcontent[i].style.display = "none";
+        subtabcontent[i].classList.remove("active-tab");
+      }
+
+      var subtablinks = document.getElementsByClassName("sub-tab-links");
+      for (i = 0; i < subtablinks.length; i++) {
+        subtablinks[i].classList.remove("active-links");
+      }
+
+      if (!subTabName) return;
+
+      var target = document.getElementById(subTabName) ||
+        document.getElementById(subTabName.toLowerCase()) ||
+        document.getElementById(subTabName.charAt(0).toUpperCase() + subTabName.slice(1));
+
+      if (target) {
+        target.style.display = "block";
+        target.classList.add("active-tab");
+      }
+
+      var targetTab = null;
+      if (evt && evt.currentTarget) {
+        targetTab = evt.currentTarget;
+      } else if (evt && evt.target) {
+        targetTab = evt.target.closest ? evt.target.closest(".sub-tab-links") : evt.target;
+      }
+
+      if (!targetTab || !targetTab.classList || !targetTab.classList.contains("sub-tab-links")) {
+        for (i = 0; i < subtablinks.length; i++) {
+          var dataSubTab = subtablinks[i].getAttribute("data-subtab") || "";
+          var onclickAttr = subtablinks[i].getAttribute("onclick") || "";
+          if (dataSubTab.toLowerCase() === subTabName.toLowerCase() || onclickAttr.toLowerCase().indexOf(subTabName.toLowerCase()) !== -1) {
+            targetTab = subtablinks[i];
+            break;
+          }
+        }
+      }
+
+      if (targetTab && targetTab.classList) {
+        targetTab.classList.add("active-links");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var defaultSubTab = document.querySelector(".sub-tab-contents.active-tab") || document.querySelector(".sub-tab-contents");
+      if (defaultSubTab) {
+        defaultSubTab.style.display = "block";
+      }
+
+      var subTabLinks = document.querySelectorAll(".sub-tab-links");
+      subTabLinks.forEach(function (btn) {
+        function activate(e) {
+          var targetId = btn.getAttribute("data-subtab");
+          if (!targetId) {
+            var onclickAttr = btn.getAttribute("onclick") || "";
+            var match = onclickAttr.match(/'([^']+)'/);
+            if (match) targetId = match[1];
+          }
+          if (targetId) {
+            openSubTab(e, targetId);
+          }
+        }
+        btn.addEventListener("touchstart", function (e) {
+          activate(e);
+        }, { passive: true });
+        btn.addEventListener("click", function (e) {
+          activate(e);
+        });
+        btn.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            activate(e);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

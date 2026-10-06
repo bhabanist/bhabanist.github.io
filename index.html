@@ -1,23 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Bhabani Sankar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhabani Sankar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR73RQYZ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XR73RQYZ5C');
+  </script>
+  <script src="https://kit.fontawesome.com/c02153cb7b.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
 </head>
 
 <body>
-    <h1>Bhabani Sankar</h1>
+  <header>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bhabani_logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <p>Welcome to my personal website.</p>
+  <main class="home-main">
+    <div class="header-content">
+      <div class="header-image">
+        <img src="images/dp.jpg" alt="Bhabani Sankar">
+      </div>
 
-    <h2>About Me</h2>
-    <p>
-        I am a PhD student in theoretical physics working on lattice QCD.
-    </p>
+      <div class="header-text">
+        <p class="intro-greeting">Hi!</p>
+        <h1>I'm <span>Bhabani Sankar</span>, a PhD student in theoretical physics at the Institute of Mathematical
+          Sciences (IMSc), Chennai.</h1>
+        <p>I work broadly in theoretical nuclear physics, with a particular interest in understanding hadrons and the
+          strong interaction from first principles.</p>
+        <p class="intro-focus">I am particularly fascinated by how the rich spectrum and structure of hadrons emerge
+          from the underlying dynamics of quarks and gluons.</p>
+      </div>
+    </div>
 
-    <h2>Research</h2>
-    <p>
-        My research interests include hadron spectroscopy,
-        lattice QCD, and numerical methods.
-    </p>
+    <!-- Lattice QCD Intro Section -->
+    <section class="lattice-intro">
+      <h2>Curious about Lattice QCD?</h2>
+      <p>If you are curious about how we study quarks, gluons, and the strong interaction using numerical simulations,
+        this conversation with <strong>Prof. Agostino Patella</strong> offers a nice and accessible introduction to
+        lattice QCD.</p>
+      <a href="https://www.youtube.com/watch?v=HAmG5ab4wO4" target="_blank" class="youtube-btn">
+        <i class="fa-brands fa-youtube"></i> Watch the conversation on YouTube ↗
+      </a>
+    </section>
+
+    <!-- Recent Highlight Section -->
+    <section class="recent-highlight">
+      <span class="highlight-badge">Recent Highlight</span>
+      <h3>When does the fermion determinant change sign?</h3>
+      <p>In our recent work, we developed a practical method to determine the sign of the fermion determinant in lattice QCD simulations with Wilson fermions. By identifying the relevant low-lying eigenvalues of the Dirac operator, the method allows rare sign changes to be detected and correctly incorporated into precision lattice calculations.</p>
+      <a href="https://arxiv.org/abs/2609.28646" target="_blank" class="highlight-link">Read more &rarr;</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Bhabani Sankar</p>
+  </footer>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-180px";
+    }
+  </script>
+
 </body>
+
 </html>

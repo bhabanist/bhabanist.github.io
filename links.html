@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bhabani Sankar</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css?v=2.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR73RQYZ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XR73RQYZ5C');
+  </script>
+  <script src="https://kit.fontawesome.com/c02153cb7b.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bhabani_logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+    <div id="links">
+      <div class="container">
+
+        <div class="row">
+          <div class="re-row-2">
+            <h1 class="Link-title">Research Portals &amp; Data</h1>
+            <ul>
+              <li><a href="https://inspirehep.net/" target="_blank"><span>INSPIRE-HEP</span></a>The primary literature, author, and citation database for high-energy physics.</li>
+              <li><a href="https://arxiv.org/list/hep-lat/new" target="_blank"><span>arXiv: hep-lat</span></a>Daily preprints in lattice field theory, simulations, and numerical QCD.</li>
+              <li><a href="https://pdg.lbl.gov/" target="_blank"><span>Particle Data Group (PDG)</span></a>The comprehensive international review of particle properties and data.</li>
+              <li><a href="https://lhcb.web.cern.ch/" target="_blank"><span>CERN &amp; LHCb Experiment</span></a>Leading collider experiments discovering multiquark and exotic hadron states.</li>
+              <li><a href="https://www.koppenburg.ch/particles.html" target="_blank"><span>Patrick Koppenburg: LHC Particles</span></a>Comprehensive catalog of new hadrons, exotics, and particles discovered at the LHC.</li>
+            </ul>
+          </div>
+
+          <div class="re-row-3">
+            <h1 class="Link-title">Notes &amp; Lattice Resources</h1>
+            <ul>
+              <li><a href="https://drive.google.com/file/d/1UyuaZQNN2N6k1ImRJs230tTdcRl7pEPE/view?usp=sharing"
+                  target="_blank"><span>Group Theory &amp; Lie Algebra</span></a>My reference notes on semi-simple Lie algebras and representations.</li>
+              <li><a href="https://drive.google.com/file/d/1DoKn5jetHdl6mCNrbtBTBG-pAQbOWJHe/view?usp=sharing"
+                  target="_blank"><span>Character Tables &amp; Young Tableaux</span></a>Summary notes on symmetric groups, Young diagrams, and irreps.</li>
+              <li><a href="https://luscher.web.cern.ch/luscher/lectures/LesHouches97.pdf" target="_blank"><span>Martin Lüscher: Les Houches Lectures</span></a>Advanced lattice QCD lectures on chiral fermions and non-perturbative gauge theories.</li>
+              <li><a href="https://www.damtp.cam.ac.uk/user/tong/teaching.html" target="_blank"><span>David Tong's
+                    Lecture Notes</span></a>Widely acclaimed lecture notes on theoretical physics (Cambridge).</li>
+            </ul>
+          </div>
+        </div>
+        <div class="blogs-link">
+          <p>Looking for my articles and thought pieces? Check out my <a href="blogs.html">Blogs →</a></p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+  <div class="copyright">
+    <p> Copyright 2023 @ bhabanist. made with <i class="fa-solid fa-heart"></i> by Bhabani Sankar</p>
+  </div>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-180px";
+    }
+  </script>
+
+</body>
+
+</html>

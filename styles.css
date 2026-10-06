@@ -1,0 +1,28 @@
+/* Reset some default styles and set up the layout */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px; /* Adjust the width as needed */
+    margin: 0 auto;
+    height: 100%;
+}
+
+.main-content {
+    flex: 2; /* Adjust the proportion as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1; /* Adjust the proportion as needed */
+    background-color: #eee;
+    padding: 20px;
+}
+

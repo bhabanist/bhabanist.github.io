@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bhabani Sankar</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css?v=2.2">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR73RQYZ5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XR73RQYZ5C');
+  </script>
+  <script src="https://kit.fontawesome.com/c02153cb7b.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+
+<body>
+  <header>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bhabani_logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/mydp.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>My interest in physics grew steadily during my undergraduate years,
+              largely inspired by science popularisation lectures and public talks.
+              They encouraged me to explore the subject beyond the classroom and
+              eventually consider a career in research. Along the way, foundational
+              books, online lecture series, and independent reading played a crucial
+              role in nurturing my curiosity and broadening my perspective on the
+              physical world.</p>
+            <p>My Master's studies marked a definitive turning point in this journey.
+              They gave me a deeper appreciation of theoretical physics and, more
+              importantly, introduced me to research, the process of asking questions
+              whose answers are not already known. This experience motivated me to
+              pursue doctoral studies, where I currently work on problems in lattice
+              QCD and hadron spectroscopy.</p>
+
+
+            <div class="tab-titles">
+              <p role="button" tabindex="0" class="tab-links active-links" data-tab="timeline" onclick="openTab(event, 'timeline')">Timeline</p>
+              <p role="button" tabindex="0" class="tab-links" data-tab="achievements" onclick="openTab(event, 'achievements')">Achievements</p>
+            </div>
+            <div class="sizespan">
+              <div id="timeline" class="tab-contents active-tab">
+                <ul>
+                  <li><span class="mySpan">Ph.D</span><br> The Institute of Mathematical Science (2022 - till now)</li>
+                  <li><span class="mySpan">MSc.</span><br> Bose Institute (2019- 2021)</li>
+                  <li><span class="mySpan">Bachelors</span><br> Berhampur University(2015-2018)</li>
+                  <li><span class="mySpan">Higher Secondary</span><br>Tara Tarini College(2013-2015)</li>
+                </ul>
+              </div>
+
+              <div id="achievements" class="tab-contents">
+                <ul>
+                  <li><span class="mySpan">JEST</span><br> 2019 - Rank 125 (Integrated PhD), 2022 - Rank 31 (PhD)</li>
+                  <li><span class="mySpan">GATE</span><br> 2021 - Rank 439</li>
+                  <li><span class="mySpan">TIFR GS</span><br> 2019 (Int. PhD) Cleared the AIE</li>
+                  <li><span class="mySpan">CSIR JRF</span><br> 2022 - Rank 53 (LS)</li>
+                  <li><span class="mySpan">BARC</span><br> 2022 Cleared the AIE</li>
+                </ul>
+                <p class="journey">These milestones reflect different stages of my academic journey. More than the
+                  individual results themselves, I value the persistence, curiosity, and continuous learning that have
+                  shaped my development as a researcher.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+  <div class="copyright">
+    <p> Copyright 2023 @ bhabanist. made with <i class="fa-solid fa-heart"></i> by Bhabani Sankar</p>
+  </div>
+
+  <script src="tabs.js?v=2.2"></script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-180px";
+    }
+
+    function openTab(evt, tabName) {
+      if (typeof evt === 'string' && !tabName) {
+        tabName = evt;
+        evt = window.event;
+      }
+      var i;
+      var tabcontent = document.getElementsByClassName("tab-contents");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        tabcontent[i].classList.remove("active-tab");
+      }
+      
+      var tablinks = document.getElementsByClassName("tab-links");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-links");
+      }
+      
+      if (!tabName) return;
+
+      var targetContent = document.getElementById(tabName) ||
+                          document.getElementById(tabName.toLowerCase());
+      if (targetContent) {
+        targetContent.style.display = "block";
+        targetContent.classList.add("active-tab");
+      }
+      
+      var targetTab = null;
+      if (evt && evt.currentTarget) {
+        targetTab = evt.currentTarget;
+      } else if (evt && evt.target) {
+        targetTab = evt.target.closest ? evt.target.closest(".tab-links") : evt.target;
+      }
+      if (!targetTab || !targetTab.classList || !targetTab.classList.contains("tab-links")) {
+        for (i = 0; i < tablinks.length; i++) {
+          var dataTab = tablinks[i].getAttribute("data-tab") || "";
+          var onclickAttr = tablinks[i].getAttribute("onclick") || "";
+          if (dataTab.toLowerCase() === tabName.toLowerCase() || onclickAttr.toLowerCase().indexOf(tabName.toLowerCase()) !== -1) {
+            targetTab = tablinks[i];
+            break;
+          }
+        }
+      }
+      if (targetTab && targetTab.classList) {
+        targetTab.classList.add("active-links");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var tabLinks = document.querySelectorAll(".tab-links");
+      tabLinks.forEach(function (btn) {
+        function activate(e) {
+          var targetId = btn.getAttribute("data-tab");
+          if (!targetId) {
+            var onclickAttr = btn.getAttribute("onclick") || "";
+            var match = onclickAttr.match(/'([^']+)'/);
+            if (match) targetId = match[1];
+          }
+          if (targetId) {
+            openTab(e, targetId);
+          }
+        }
+        btn.addEventListener("touchstart", function (e) {
+          activate(e);
+        }, { passive: true });
+        btn.addEventListener("click", function (e) {
+          activate(e);
+        });
+        btn.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            activate(e);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

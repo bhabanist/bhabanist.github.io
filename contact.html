@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bhabani Sankar</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css?v=2.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR73RQYZ5C"></script>
+  <script>
+		  window.dataLayer = window.dataLayer || [];
+		    function gtag(){dataLayer.push(arguments);}
+		      gtag('js', new Date());
+
+		        gtag('config', 'G-XR73RQYZ5C');
+  </script>
+  <script src="https://kit.fontawesome.com/c02153cb7b.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/bhabani_logo.png" class ="logo">
+          <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       
+      </div>
+      
+    </div>
+  
+  </header>
+
+  <main>
+    <div id="contact">
+      <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title"> Contact Me</h1>
+          <img src="images/imsc.jpg" alt="Your Image Alt Text">
+          <p><i class="fa-solid fa-paper-plane"></i> bhabanist (at) imsc (dot) res (dot) in</p>
+          <p><i class="fa-solid fa-paper-plane"></i> tbhabanisankar (at) gmail (dot) com</p>
+          <p>
+            
+            The Institute of Mathematical Science,<br>
+            Tharamani, Chennai, pin-600113<br>
+            Tamil Nadu, India
+        </p>
+          <div class ="social-icons">
+            <a href="https://www.linkedin.com/in/bhabani-sankar-156732243"><i class="fa-brands fa-linkedin"></i></a>
+	    <a href="https://www.facebook.com/profile.php?id=61575255715019"><i class="fa-brands fa-facebook-f"></i>
+            <a href="https://www.instagram.com/bhabanisankar511/"><i class="fa-brands fa-instagram"></i>
+            <a href="https://youtube.com/@bhabanisankar4439"><i class="fa-brands fa-youtube"></i></a>
+            <a href=" https://github.com/bhabanist"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+          <input type="text" name = "Name" placeholder="Your Name" required>
+          <input type="email" name ="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows=" = 6" placeholder="Your Message"></textarea>
+          <button type="submit" class = "btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      
+    </div>
+    </div>
+    
+    </div>
+    <div class="copyright">
+      <p> Copyright 2023 @ bhabanist. made with <i class="fa-solid fa-heart"></i> by Bhabani Sankar</p>
+    </div>
+  </main>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6hZam9S3LrBTIi2i4WtYrnKLDT_pF5TO3hm1AVYHjxX4qNa3E1b5rVqQGMAwC5ipE4Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-180px";
+    }
+  </script>
+  
+</body>
+
+</html>
+
